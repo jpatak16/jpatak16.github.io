@@ -208,9 +208,9 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-weight: 400;
+    font-weight: 800;
     letter-spacing: 1px;
-    color: #fff;
+    color: #2a2;
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -234,7 +234,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.data.template.color.secondary }};
 }
 
-@media(min-width:768px) {
+@media(orientation: landscape) {
     .navbar-default {
         padding: 25px 0;
         border: 0;
@@ -243,9 +243,13 @@ fieldset[disabled] .btn-xl.active {
         -moz-transition: padding .3s;
         transition: padding .3s;
     }
+    
+    .navbar-default .nav {
+        font-size:1.5em;
+    }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 3.5em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -279,7 +283,7 @@ header {
 }
 
 /* For mobile: switch to portrait */
-@media (max-width: 850px) {
+@media (orientation: portrait) {
     header {
         background-image: url('{{ site.baseurl }}/img/header-port.jpg');
         background-position: bottom;
