@@ -236,9 +236,9 @@ fieldset[disabled] .btn-xl.active {
 
 @media(orientation: landscape) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 0px 0;
         border: 0;
-        background-color: transparent;
+        background-color: #222;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -337,7 +337,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 40px 0;
 }
 
 section h2.section-heading {
@@ -350,8 +350,8 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 16px;
-    font-style: italic;
+    font-size: 18px;
+    /*font-style: italic;*/
     font-weight: 400;
 }
 
