@@ -366,6 +366,49 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+.custom-pills {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-pills > li {
+  margin: 0 0.5rem;
+}
+
+.custom-pills > li > a {
+  border-radius: 999px;
+  padding: 1rem 2rem;
+  font-size: 2.2rem;
+  background-color: #e9ecef;
+  color: #{{ site.data.template.color.primary }};
+  font-weight: 600;
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 150px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.custom-pills > li > a:hover,
+.custom-pills > li > a:focus {
+  background-color: #d6d8db;
+  color: #{{ site.data.template.color.primary }};
+  outline: none;
+}
+
+.custom-pills > li.active > a {
+  background-color: #2a2 !important;
+  color: #{{ site.data.template.color.primary }} !important;
+  box-shadow: 0 0 8px #{{ site.data.template.color.primary }} !important;
+  cursor: default;
+}
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
