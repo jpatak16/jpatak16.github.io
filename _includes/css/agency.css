@@ -374,6 +374,7 @@ section h3.section-subheading {
   justify-content: center;
   list-style: none;
   padding-left: 0;
+  margin-bottom: 50px;
 }
 
 .custom-pills > li {
@@ -408,6 +409,20 @@ section h3.section-subheading {
   box-shadow: 0 0 8px #{{ site.data.template.color.primary }} !important;
   cursor: default;
 }
+.skill_chunk {
+  padding-bottom: 40px;
+}
+
+.icons {
+  position: relative;
+  display: content;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+
 
 #portfolio .portfolio-item {
     right: 0;
