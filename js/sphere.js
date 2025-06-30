@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById('sphere-container');
-  if (!container) return; // don't run if container is missing
+  if (!container) return;
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   container.appendChild(renderer.domElement);
 
   const textureLoader = new THREE.TextureLoader();
-  const logoTexture = textureLoader.load('/assets/logo.png');
+  const logoTexture = textureLoader.load('/assets/ball1.png');
 
   const geometry = new THREE.SphereGeometry(2, 64, 64);
   const material = new THREE.MeshStandardMaterial({
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function animate() {
     requestAnimationFrame(animate);
-    sphere.rotation.y += 0.01;
+    sphere.rotation.y += 0.015;
     renderer.render(scene, camera);
   }
   animate();
