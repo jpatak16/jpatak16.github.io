@@ -1,0 +1,61 @@
+---
+layout: port_page
+title: Portfolio
+permalink: /portfolio/
+---
+<section class="bg-light-gray">
+<div class="container">
+  <h2 class="text-center">All Projects</h2>
+
+    <ul class="nav nav-pills custom-pills" id="filter-pills">
+  <li class="active"><a href="#" class="filter-link" data-filter="all">All</a></li>
+  <li><a href="#" class="filter-link" data-filter="web">Web</a></li>
+  <li><a href="#" class="filter-link" data-filter="data">Data</a></li>
+  <li><a href="#" class="filter-link" data-filter="viz">Visualization</a></li>
+</ul>
+
+  <!-- Posts Grid -->
+  <div class="row" id="portfolio-grid">
+    {% for post in site.posts%}
+      <div class="col-md-4 col-sm-6 portfolio-item {{ post.category | downcase }}">
+        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>{{ post.title }}</h4>
+          <p class="text-muted">{{ post.subtitle }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<script>
+$(document).ready(function() {
+  $('#filter-pills .filter-link').click(function(e) {
+    e.preventDefault();
+
+    // Remove active class from all pills
+    $('#filter-pills li').removeClass('active');
+
+    // Add active class to clicked pill's <li>
+    $(this).parent('li').addClass('active');
+
+    const filter = $(this).data('filter');
+
+    $('.portfolio-item').each(function() {
+      if (filter === 'all' || $(this).hasClass(filter)) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
+});
+</script>

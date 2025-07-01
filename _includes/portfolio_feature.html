@@ -4,11 +4,11 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Please take a moment to check out some of my past projects!</h3>
                 </div>
             </div>
             <div class="row">
-            {% for post in site.posts %}
+            {% for post in site.posts limit:3 %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -24,6 +24,9 @@
                     </div>
                 </div>
             {% endfor %}
+            </div>
+            <div class="text-center" style="margin-top: 30px;">
+              <a href="/portfolio" class="btn btn-primary btn-lg">View All Projects</a>
             </div>
         </div>
     </section>
