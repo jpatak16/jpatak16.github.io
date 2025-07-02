@@ -357,13 +357,17 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 75px 0;
     }
 }
 
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+}
+
+.h1-extra-padding {
+  padding-bottom: 50px;
 }
 
 .custom-pills {
@@ -421,8 +425,6 @@ section h3.section-subheading {
   line-height: 2em;
   vertical-align: middle;
 }
-
-
 
 #portfolio .portfolio-item {
     right: 0;
