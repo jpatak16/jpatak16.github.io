@@ -13,7 +13,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h1>{{ post.title }}</h1>
-                            <hr class="star-primary">
                             <ul class="list-inline item-details">
                               <li>Date:
                                 <strong>
@@ -22,10 +21,12 @@
                               </li>
                               <li>GH Repo:
                                 <strong>
-                                  <a href= "{{ post.gh-link }}">Repo Name</a>
+                                  <a href= "{{ post.gh-link }}"> {{post.gh-repo-name}}</a>
                                 </strong>
                               </li>
                             </ul>
+                            <hr class="star-primary">
+                            
                             
                             {{ post.content }}
                             

@@ -677,6 +677,29 @@ ul.social-buttons li a:active {
     margin-bottom: 30px;
 }
 
+.portfolio-modal .portfolio-image-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.portfolio-modal .portfolio-image-group img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  flex: 1 1 300px;
+  object-fit: contain;
+}
+
+@media (min-width: 700px) {
+  .portfolio-modal .portfolio-image-group img {
+    width: calc(50% - 0.5rem);
+  }
+}
+
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
