@@ -248,6 +248,10 @@ fieldset[disabled] .btn-xl.active {
         font-size:1.5em;
     }
 
+    .port-page .navbar-default .nav > li > a {
+      margin-top: 11px;
+    }
+
     .navbar-default .navbar-brand {
         font-size: 3.5em;
         -webkit-transition: all .3s;
@@ -258,26 +262,87 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
     }
-
+    
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding: 0px 0 !important;
         background-color: #222;
+    }
+    
+    .port-page .navbar-default.navbar-shrink {
+        padding: 0px 0 !important;
+        background-color: #222;
+        margin-top: -12px;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        
+    }
+    
+    .port-page .navbar-default.navbar-shrink .navbar-brand {
+        margin-top: 10px;
+    }
+    
+    .navbar-shrink .sphere-logo {
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
     }
 }
 
-.sphere-logo {
-  width: 100px;
-  height: 100px;
+@media(min-height:1000px) {
+  .sphere-logo {
+  width: 70px !important;
+  height: 70px !important;
   transition: all 0.3s ease;
+  }
 }
 
-.navbar-shrink .sphere-logo {
-  width: 50px;
-  height: 50px;
+@media (max-width: 767px) {
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar-alt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-header .navbar-brand {
+    margin-left: -150px;
+  }
+
+  .navbar-header .navbar-toggle {
+    margin-right: -175px;
+  }
+  
+  .brand-extra-padding{
+    margin-left: -50px !important;
+  }
+  
+  .sphere-extra-padding{
+    margin-left: -90px;
+  }
+  
+  .btn-extra-padding{
+    margin-right: -60px !important;
+  }
+  
+}
+
+.navbar-alt{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sphere-logo {
+  width: 10vh;
+  height: 10vh;
+  transition: all 0.3s ease;
 }
 
 header {
@@ -348,7 +413,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 40px 0;
+    padding: 10vh 0;
 }
 
 section h2.section-heading {
@@ -382,18 +447,19 @@ section h3.section-subheading {
 }
 
 .custom-pills {
-  gap: 2rem;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0 auto 50px;
   list-style: none;
-  padding-left: 0;
-  margin-bottom: 50px;
+  max-width: 100%;
 }
 
 .custom-pills > li {
-  margin: 0 0.5rem;
+  margin: 0;
 }
 
 .custom-pills > li > a {
@@ -405,10 +471,17 @@ section h3.section-subheading {
   font-weight: 600;
   border: none;
   transition: all 0.2s ease;
-  min-width: 150px;
   text-align: center;
   display: inline-block;
   text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 450px) {
+  .port-page .custom-pills > li > a {
+    font-size: 1.2rem;
+    padding: 0.5rem .8rem;
+  }
 }
 
 .custom-pills > li > a:hover,
@@ -424,6 +497,7 @@ section h3.section-subheading {
   box-shadow: 0 0 8px #{{ site.data.template.color.primary }} !important;
   cursor: default;
 }
+
 .skill_chunk {
   padding-bottom: 40px;
 }
