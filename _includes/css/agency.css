@@ -352,7 +352,7 @@ header {
     text-align: center;
     color: #2A2A2A;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-land.jpg');
+    background-image: url('{{ site.baseurl }}/img/header-land2.png');
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -361,8 +361,16 @@ header {
 /* For mobile: switch to portrait */
 @media (orientation: portrait) {
     header {
-        background-image: url('{{ site.baseurl }}/img/header-port.jpg');
+        background-image: url('{{ site.baseurl }}/img/header-port2.png');
         background-position: bottom;
+    }
+    
+    header .intro-text .intro-lead-in {
+      opacity: 0;
+    }
+
+    header .intro-text .intro-heading {
+      opacity: 0;
     }
 }
 
@@ -381,6 +389,7 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
+    margin-top: 20vh;
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-size: 50px;
