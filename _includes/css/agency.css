@@ -571,13 +571,24 @@ section h3.section-subheading {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
-    text-align: center;
     background-color: #fff;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .portfolio-item img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
+    text-align: center;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
