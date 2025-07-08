@@ -5,7 +5,7 @@ layout: default
 modal-id: trade-deadline-ml
 date: 2022-03-24
 thumbnail: td-ml-res.png
-project-date: March 2021
+project-date: March 2022
 category: bball analytics
 gh-link:
 gh-repo-name:
