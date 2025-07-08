@@ -1,0 +1,22 @@
+---
+title: 2021-22 B1G Basketball Preview
+subtitle: Basketball 
+layout: default
+modal-id: big10-guide
+date: 2021-05-18
+thumbnail: msu-preview.png
+project-date: May 2021
+category: bball
+gh-link:
+gh-repo-name:
+---
+
+<img src="{{ site.url }}/img/portfolio/b1g-hoops.webp" style="width: 50%">
+
+<h3>Brief Overview</h3>
+
+<p> When I was looking for a college GA job, I decided to preview the upcoming Big-10 Basketball season by aggregating all the happenings around the conference into one central document, hoping that it would be useful to coaching staffs as they prepared for the season. My guide for each team includes key additions, returning, and departing players for each team, a recap of their prior season, and a roster overview including a summary of each rostered player. After seeing this project, I had a coach hire me to produce the same thing for the ACC. </p>
+
+<a href="{{ site.url }}/projects/2021-22_B1G_Preview.pdf">
+  <button class="btn-xl">Check Out The Full Guide!</button>
+</a>
