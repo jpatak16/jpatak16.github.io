@@ -1,91 +1,131 @@
 <!-- About Me Section -->
-    <section id="aboutme">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About Me</h2>
-                    <img src="assets/jeremy.png" class="img-fluid my-3" style="width: 35%;">
-                    <h3 class="section-subheading text-muted">Hi! I am a skilled data profesional and a lifelong basketball junkie. After my playing career ended at the high school level, I got my first job in hoops as a Student Manager for Texas A&M Men's Basketball. After getting to work under two head coaching regimes during my time there, I realized my dream was to have a long career working in basketball.<br><br> Since then, I've been able to build valuable experience both in and out of basketball. However, my passion towards working in hoops has not faded, and I am more determined than ever to earn a role in an NBA front office. I miss working hard as part of a team towards a common goal, and there are so many things about working in sports that I haven't found to be replicated in any of my other roles. I am confident in the skillset that I have been building, and I am excited to find a role where I can make significant contriutions while continuing to learn and grow every day!</h3>
+<section id="aboutme">
+  <style>
+    @media (max-width: 768px) {
+      .tab-pane .skill_chunk {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid rgba(0,0,0,0.08);
+      }
+
+      .tab-pane .skill_chunk:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+    
+    .exp-img {
+      height: 100px;
+      width: auto;
+      object-fit: contain
+    }
+    
+    @media (max-width: 768px) {
+      .exp-img {
+        height: 85px;
+        width: auto;
+        object-fit: contain
+      }
+    }
+    
+    .icons img {
+      margin-right: 10px
+    }
+    
+    .icons img:last-child {
+      margin-right: 0
+    }
+  </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">About Me</h2>
+                <img src="assets/jeremy.png" class="img-fluid my-3" style="width: 35%;">
+                <h3 class="section-subheading text-muted">Hi! I am a skilled data professional with a love for the sport of basketball. I have been lucky enough to have a wide range of experiences in the sport, including in the video room at the college level, a researcher for a basketball tech company, and analysis and engineering roles within two NBA front offices. I didn't start any of these positions with expertise, but my passion and ability to learn quickly has allowed me to excel in all of them.<br><br> My goal is to continue to sharpen and expand my already diverse skillset so that I can contribute to another NBA strategy and analytics team. My broad skillset allows me to fill multiple roles, which aligns with my philosophy of doing whatever is needed for the sake of the team. I enjoy the grind of working as part of a team towards a common goal, and deeply value the relationships that are forged through that process!</h3>
+            </div>
+        </div>
+
+        <!-- Pills Navigation -->
+        <ul class="nav nav-pills custom-pills" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#background" aria-controls="background" role="tab" data-toggle="pill" aria-selected="true">
+                    Background
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#skills" aria-controls="skills" role="tab" data-toggle="pill" aria-selected="false">
+                    Skills
+                </a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+
+            <div role="tabpanel" class="tab-pane active" id="background">
+                <div class="row text-center">
+                    <div class="skill_chunk col-md-3">
+                        <span class="icons">
+                            <img src="./assets/tamu-logo.png" class="exp-img" />
+                            <img src="./assets/oregon-logo.png" class="exp-img" />
+                        </span>
+                        <h4 class="service-heading">Education</h4>
+                    </div>
+                    <div class="skill_chunk col-md-6">
+                        <span class="icons">
+                            <img src="./assets/duck-hoops.png" class="exp-img" />
+                            <img src="./assets/sis-logo.png" class="exp-img" />
+                            <img src="./assets/okc-logo.png" class="exp-img" />
+                            <img src="./assets/dal-logo.png" class="exp-img" />
+                        </span>
+                        <h4 class="service-heading">Sports Data Experience</h4>
+                    </div>
+                    <div class="skill_chunk col-md-3">
+                        <span class="icons">
+                            <img src="./assets/bls-logo.png" class="exp-img" />
+                            <img src="./assets/simpluris-logo.png" class="exp-img" />
+                        </span>
+                        <h4 class="service-heading">Non-Sports Experience</h4>
+                        <p class="text-muted">Bureau of Labor Statistics: Economist</p>
+                        <p class="text-muted">Simpluris: Data Analyst</p>
+                    </div>
                 </div>
             </div>
-              <!-- Pills Navigation -->
-              <ul class="nav nav-pills custom-pills" role="tablist">
-                <li role="presentation" class="active">
-                  <a href="#skills" aria-controls="skills" role="tab" data-toggle="pill" aria-selected="true">
-                    Skills
-                  </a>
-                </li>
-                <li role="presentation">
-                  <a href="#background" aria-controls="background" role="tab" data-toggle="pill" aria-selected="false">
-                    Background
-                  </a>
-                </li>
-              </ul>
-              <!-- Tab Content -->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="skills">
-                  <div class="row text-center">
+
+            <div role="tabpanel" class="tab-pane" id="skills">
+                <div class="row text-center">
                     <div class="skill_chunk col-md-4">
-                      <span class="icons">
-                        <img src="./assets/icon-r.png" width="25%" height="25%" />
-                        <img src="./assets/icon-python.svg" width="25%" height="25%" />
-                      </span>
-                      <h4 class="service-heading">Analysis</h4>
-                      <p class="text-muted"><b>R</b>: dplyr, ggplot2, gt, plotly, reactable, tidymodels</p>
-                      <p class="text-muted"><b>Python</b>:Pandas, NumPy</p>
+                        <span class="icons">
+                            <img src="./assets/icon-r.png" class="exp-img" />
+                            <img src="./assets/icon-python.svg" class="exp-img" />
+                        </span>
+                        <h4 class="service-heading">Analysis</h4>
+                        <p class="text-muted"><b>R</b>: dplyr, ggplot2, gt, plotly, reactable, tidymodels</p>
+                        <p class="text-muted"><b>Python</b>:Pandas, NumPy</p>
+                        <p class="text-muted">Experience using big data sources, including frame level tracking data.</p>
                     </div>
                     <div class="skill_chunk col-md-4">
-                      <span class="icons">
-                        <img src="./assets/shiny-logo.png" width="25%" height="25%" />
-                        <img src="./assets/html-logo.png" width="25%" height="25%" />
-                        <img src="./assets/css-logo.png" width="25%" height="25%" />
-                      </span>
-                      <h4 class="service-heading">Development</h4>
-                      <p class="text-muted">Currently working on learning <b>React</b></p>
+                        <span class="icons">
+                            <img src="./assets/shiny-logo.png" class="exp-img" />
+                            <img src="./assets/html-logo.png" class="exp-img" />
+                            <img src="./assets/css-logo.png" class="exp-img" />
+                        </span>
+                        <h4 class="service-heading">Development</h4>
                     </div>
-                    <div class="skill chunk col-md-4">
-                      <span class="icons">
-                        <img src="./assets/aws-icon.png" width="25%" height="25%" />
-                        <img src="./assets/sql-logo.png" width="25%" height="25%" />
-                        <img src="./assets/hawkeye.jpg" width="25%" height="25%" />
-                      </span>
-                      <h4 class="service-heading">Other</h4>
-                      <p class="text-muted"><b>AWS</b>: EC2, S3, Athena</p>
-                      <p class="text-muted">Experience with Big Data, including using Hawk-Eye Basketball data to create rebound metrics.</p>
-                      <p class="text-muted">Skilled webscraper and data cleaner</p>
+                    <div class="skill_chunk col-md-4">
+                        <span class="icons">
+                            <img src="./assets/aws-icon.png" class="exp-img" />
+                            <img src="./assets/gce-logo.png" class="exp-img" />
+                            <img src="./assets/mysql-logo.png" class="exp-img" />
+                        </span>
+                        <h4 class="service-heading">Engineering</h4>
+                        <p class="text-muted">Experience maintaining and improving a production-level database.</p>
+                        <p class="text-muted">Skilled at creating polished and functional data pipelines from scratch.</p>
                     </div>
-                  </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="background">
-                  <div class="row text-center">
-                    <div class="skill_chunk col-md-4">
-                      <span class="icons">
-                        <img src="./assets/tamu-logo.png" width="25%" height="25%" />
-                        <img src="./assets/oregon-logo.png" width="25%" height="25%" />
-                        <img src="./assets/so-icon.png" width="25%" height="25%" />
-                      </span>
-                      <h4 class="service-heading">Education</h4>
-                    </div>
-                    <div class="skill_chunk col-md-4">
-                      <span class="icons">
-                        <img src="./assets/duck-hoops.png" width="25%" height="25%" />
-                        <img src="./assets/sis-logo.png" width="25%" height="25%" />
-                        <img src="./assets/okc-logo.png" width="25%" height="25%" />
-                      </span>
-                      <h4 class="service-heading">Sports Data Experience</h4>
-                    </div>
-                    <div class="skill chunk col-md-4">
-                      <span class="icons">
-                        <img src="./assets/bls-logo.png" width="25%" height="25%" />
-                        <img src="./assets/simpluris-logo.png" width="25%" height="25%" />
-                      </span>
-                      <h4 class="service-heading">Non-Sports Experience</h4>
-                      <p class="text-muted">Bureau of Labor Statistics: Economist</p>
-                      <p class="text-muted">Simpluris: Data Analyst</p>
-                    </div>
-                  </div>
-                </div>
-                </div>
-              </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
