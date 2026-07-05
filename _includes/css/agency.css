@@ -298,12 +298,6 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 
-@media (orientation: portrait) {
-  #sphere-container {
-    margin-top: -43px !important;
-  }
-}
-
 @media (max-width: 767px) {
   .navbar-header {
     display: flex;
@@ -381,7 +375,7 @@ header {
 }
 
 header .intro-text {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
