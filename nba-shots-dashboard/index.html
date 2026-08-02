@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Interactive NBA player shot dashboard"
+    />
+
+    <title>NBA Shot Dashboard</title>
+    <script type="module" crossorigin src="./assets/index-DkT8ir5a.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DdZ8coVu.css">
+  </head>
+
+  <body>
+    <main class="dashboard">
+      
+      <!-- Dashboard heading -->
+      <header class="dashboard__header">
+        <div>
+          <h1>NBA Shots Dashboard</h1>
+          <p class="dashboard__description">
+            Explore where each player takes shots and how efficiently they score.
+          </p>
+        </div>
+      </header>
+      
+      <!-- Dashboard controls -->
+      <section class="controls" aria-label="Dashboard filters">
+        <label class="control">
+          <span>Player</span>
+          <!-- Player dropdown -->
+          <select id="player-select">
+            <option value="">Loading players...</option>
+          </select>
+        </label>
+
+        <label class="control">
+          <span>Season</span>
+
+          <select id="season-select">
+            <option value="">Loading seasons...</option>
+          </select>
+        </label>
+
+        <fieldset class="control-group">
+          <legend>Display</legend>
+
+          <div class="segmented-control">
+            <input
+              class="segmented-control__input"
+              type="radio"
+              id="chart-view-hex"
+              name="chart-view"
+              value="hex"
+              checked
+            />
+
+            <label
+              class="segmented-control__label"
+              for="chart-view-hex"
+            >
+              Hex
+            </label>
+
+            <input
+              class="segmented-control__input"
+              type="radio"
+              id="chart-view-dots"
+              name="chart-view"
+              value="dots"
+            />
+
+            <label
+              class="segmented-control__label"
+              for="chart-view-dots"
+            >
+              Dots
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="control-group">
+          <legend>Efficiency Scale</legend>
+
+          <div class="segmented-control">
+            <input
+              class="segmented-control__input"
+              type="radio"
+              id="color-scale-fixed"
+              name="color-scale"
+              value="fixed"
+              checked
+            />
+
+            <label
+              class="segmented-control__label"
+              for="color-scale-fixed"
+            >
+              Fixed
+            </label>
+
+            <input
+              class="segmented-control__input"
+              type="radio"
+              id="color-scale-player"
+              name="color-scale"
+              value="player"
+            />
+
+            <label
+              class="segmented-control__label"
+              for="color-scale-player"
+            >
+              Player
+            </label>
+          </div>
+        </fieldset>
+      </section>
+
+      <p id="status-message" role="status">
+        Loading shot data...
+      </p>
+
+      <!-- Chart and summary content -->
+      <section class="dashboard__content">
+        <section class="chart-panel" aria-labelledby="player-name">
+          <header class="player-header">
+            <div class="player-headshot" aria-label="Player headshot placeholder" role="img">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="23" r="12"></circle>
+                <path
+                  d="
+                  M 10 58
+                  C 12 43, 20 36, 32 36
+                  C 44 36, 52 43, 54 58
+                  Z"
+                ></path>
+              </svg>
+            </div>
+            
+            <div class="player-header__details">
+
+              <h2 id="player-name">
+                Player
+              </h2>
+
+              <p class="player-header__metadata">
+                <span id="player-team">
+                  Team Placeholder
+                </span>
+
+                <span aria-hidden="true">•</span>
+
+                <span id="player-season">
+                  Season
+                </span>
+              </p>
+            </div>
+          </header>
+
+          <div id="shot-chart"></div>
+
+          <div id="chart-notes" class="chart-notes" aria-live="polite"></div>
+        </section>
+
+        <section class="summary-panel" aria-labelledby="summary-context">
+          <header class="summary-header">
+            <p class="summary-header__label">
+              Summary Statistics
+            </p>
+
+            <h2 id="summary-context">
+              Overall
+            </h2>
+
+            <div class="summary-region-control">
+              <select id="summary-region-select" aria-label="Summary region"></select>
+            </div>
+          </header>
+
+          <div id="summary-cards" class="summary-cards"></div>
+
+          <div class="summary-notes">
+            <p>Each circle represents one player in the selected season.</p>
+            <p>The highlighted circle shows the selected player’s percentile.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+  </body>
+</html>
