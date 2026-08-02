@@ -17,6 +17,6 @@ gh-repo-name:
 
 <p> When trying to get a GA job with Indiana Basketball, I created a full scouting report on their team from the season prior. This report included offensive and defensive overviews, player personnel, offensive actions, and set plays, all of which I obtained by watching film. </p>
 
-<a href="{{ site.url }}/projects/Indiana20-21.pdf">
+<a href="{{ site.url }}/portfolio/Indiana20-21.pdf">
   <button class="btn-xl">Check Out The Full Report!</button>
 </a>

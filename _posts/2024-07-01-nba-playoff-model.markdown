@@ -22,6 +22,6 @@ gh-repo-name:
   <img src="{{ site.url }}/img/portfolio/po-mod-res-east.png">
 </div>
 
-<a href="{{ site.url }}/projects/nba_playoff_model.html">
+<a href="{{ site.url }}/portfolio/nba_playoff_model.html">
   <button class="btn-xl">Check Out The Full Project Write-Up!</button>
 </a>

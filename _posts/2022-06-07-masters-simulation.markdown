@@ -24,6 +24,6 @@ gh-repo-name: PGAtour_project
   <img src="{{ site.url }}/img/portfolio/masters-res-2.png">
 </div>
 
-<a href="{{ site.url }}/projects/PGAproject.html">
+<a href="{{ site.url }}/portfolio/PGAproject.html">
   <button class="btn-xl">Check Out The Full Project Write-Up!</button>
 </a>

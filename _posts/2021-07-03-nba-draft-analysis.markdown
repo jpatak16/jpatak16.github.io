@@ -17,6 +17,6 @@ gh-repo-name:
 
 <p> Before the 2021 Draft, I had completed a Python project comparing the play style of NCAA and NBA players based on box score statistics. I used those results as a reference when examining 2021 NBA Draft prospects that I was a fan of. </p>
 
-<a href="{{ site.url }}/projects/2021NBADraftProspects.pdf">
+<a href="{{ site.url }}/portfolio/2021NBADraftProspects.pdf">
   <button class="btn-xl">Check Out The Full Project!</button>
 </a>

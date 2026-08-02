@@ -18,6 +18,6 @@ gh-repo-name:
 <p> As the 2023 Offseason approaches, I lay out a plan for the Orlando Magic by examining their current state, assets, and goals, then making a plan for the draft, free agency, and all key contract options they will face. </p>
 
 
-<a href="{{ site.url }}/projects/ORL23_offseason.pdf">
+<a href="{{ site.url }}/portfolio/ORL23_offseason.pdf">
   <button class="btn-xl">Check Out The Full Project Write-Up!</button>
 </a>
